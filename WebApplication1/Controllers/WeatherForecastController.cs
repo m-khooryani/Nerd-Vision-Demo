@@ -26,7 +26,10 @@ namespace WebApplication1.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
-            var rng = new Random();
+            int a = 1;
+            int b = a * 5;
+            int c = b - 3;
+            var rng = new Random(c);
             var weatherForecasts = Enumerable
                 .Range(1, 5)
                 .Select(index => new WeatherForecast
